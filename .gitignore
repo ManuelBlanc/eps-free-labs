@@ -1,0 +1,14 @@
+# Recursos externos
+#img/
+#lib/
+
+# Generados
+#*.html
+#*.css
+#timetable.json
+
+# Editor
+*~
+.*.swp
+.*.swo
+*.sublime-workspace

@@ -1,0 +1,16 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": ".",
+			"file_exclude_patterns": ["*.html", "*.css"] // "*.sublime-project"
+		}
+	],
+	"build_systems": [
+		{
+			"name": "[project] rake",
+			"cmd": ["rake", "all"]
+		}
+	]
+}

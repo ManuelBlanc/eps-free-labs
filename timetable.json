@@ -1,0 +1,1627 @@
+{
+  "1": [
+    {
+      "id": "1",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        "TCOMM",
+        "TCOMM",
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "2",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "DADM",
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "3",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "DADM",
+        "PINGS",
+        "PINGS",
+        false,
+        false
+      ]
+    },
+    {
+      "id": "4",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "DADM",
+        false,
+        "NEURO",
+        "NEURO",
+        false
+      ]
+    },
+    {
+      "id": "5a",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "APS",
+        "APS",
+        false
+      ]
+    },
+    {
+      "id": "5b",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "6a",
+      "schedule": [
+        "RMULT, RM",
+        "RMULT, RM",
+        false,
+        false,
+        false,
+        false,
+        "DASOFT",
+        false,
+        "SEDU",
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "6b",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "7",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "8a",
+      "schedule": [
+        "PADSOF",
+        "PADSOF",
+        false,
+        false,
+        false,
+        false,
+        "ADSOF",
+        "ADSOF",
+        "ADSOF",
+        "ADSOF",
+        false,
+        false
+      ]
+    },
+    {
+      "id": "8b",
+      "schedule": [
+        "PADSOF",
+        "PADSOF",
+        false,
+        false,
+        false,
+        false,
+        "PADSOF",
+        "PADSOF",
+        "ADSOF",
+        "ADSOF",
+        false,
+        false
+      ]
+    },
+    {
+      "id": "9",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "10",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "11",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "SOPER",
+        "SOPER",
+        "SOPER",
+        "SOPER",
+        false,
+        false
+      ]
+    },
+    {
+      "id": "12",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "SOPER",
+        "SOPER",
+        "SOPER",
+        "SOPER",
+        false,
+        false
+      ]
+    },
+    {
+      "id": "13",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "14",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "15",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "16",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        "PPROG-2122",
+        false,
+        false,
+        "PINGS",
+        "PINGS",
+        false,
+        false
+      ]
+    }
+  ],
+  "2": [
+    {
+      "id": "1",
+      "schedule": [
+        false,
+        false,
+        false,
+        "PROG2",
+        "PROG2",
+        "TCOMM",
+        "TCOMM",
+        false,
+        "PROG2",
+        "PROG2",
+        false,
+        false
+      ]
+    },
+    {
+      "id": "2",
+      "schedule": [
+        false,
+        false,
+        false,
+        "PROG2",
+        "PROG2",
+        false,
+        false,
+        false,
+        "PROG2",
+        "PROG2",
+        false,
+        false
+      ]
+    },
+    {
+      "id": "3",
+      "schedule": [
+        "SI2",
+        "SI2",
+        false,
+        "PROG2",
+        "PROG2",
+        "PINGS",
+        "SI2",
+        "SI2",
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "4",
+      "schedule": [
+        "POO",
+        "POO",
+        false,
+        false,
+        false,
+        "SISTINF",
+        "SISTINF",
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "5a",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "5b",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        "CIRDIG",
+        "CIRDIG",
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "6a",
+      "schedule": [
+        "RM",
+        "RM",
+        false,
+        false,
+        false,
+        "UCAMI",
+        "UCAMI",
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "6b",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "BIOM",
+        "BID",
+        "CBNT",
+        "AAHS",
+        false,
+        false
+      ]
+    },
+    {
+      "id": "7",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "8a",
+      "schedule": [
+        false,
+        false,
+        false,
+        "PROG2",
+        "PROG2",
+        "PADSOF",
+        "PADSOF",
+        false,
+        false,
+        "BIP",
+        false,
+        false
+      ]
+    },
+    {
+      "id": "8b",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        "INGS",
+        "INGS",
+        false,
+        false,
+        false,
+        "PADSOF",
+        "PADSOF",
+        false
+      ]
+    },
+    {
+      "id": "9",
+      "schedule": [
+        "INTART",
+        "INTART",
+        false,
+        false,
+        "INGS",
+        "INGS",
+        "INGS",
+        "INGS",
+        false,
+        "PADSOF",
+        "PADSOF",
+        false
+      ]
+    },
+    {
+      "id": "10",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        "ARQRED2",
+        "ARQRED2",
+        false,
+        false,
+        "PADSOF",
+        "PADSOF",
+        false
+      ]
+    },
+    {
+      "id": "11",
+      "schedule": [
+        "SI2",
+        "SI2",
+        false,
+        false,
+        "MICRO",
+        "MICRO",
+        "SI2",
+        "SI2",
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "12",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        "MICRO",
+        "MICRO",
+        false,
+        false,
+        false,
+        "PADSOF",
+        "PADSOF",
+        false
+      ]
+    },
+    {
+      "id": "13",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "14",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        "MICRO",
+        "MICRO",
+        false,
+        false,
+        false,
+        "MICRO",
+        "MICRO",
+        false
+      ]
+    },
+    {
+      "id": "15",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        "PRG2",
+        "PRG2",
+        false,
+        "SNCI",
+        "ASUM",
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "16",
+      "schedule": [
+        false,
+        false,
+        false,
+        "PPROG-2122",
+        "PPROG-2122",
+        "PINGS",
+        "INGS",
+        "INGS",
+        false,
+        "PINGS",
+        false,
+        false
+      ]
+    }
+  ],
+  "3": [
+    {
+      "id": "1",
+      "schedule": [
+        "PROG2",
+        "PROG2",
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "2",
+      "schedule": [
+        "PROG2",
+        "PROG2",
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "3",
+      "schedule": [
+        "PROG2",
+        "PROG2",
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "4",
+      "schedule": [
+        "TSM",
+        "TSM",
+        false,
+        false,
+        false,
+        "SISTINF",
+        "SISTINF",
+        false,
+        false,
+        "BMINF",
+        "BMINF",
+        false
+      ]
+    },
+    {
+      "id": "5a",
+      "schedule": [
+        "EC",
+        "EC",
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "EC",
+        "EC",
+        false,
+        false
+      ]
+    },
+    {
+      "id": "5b",
+      "schedule": [
+        "EC",
+        "EC",
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "EC",
+        "EC",
+        false,
+        false
+      ]
+    },
+    {
+      "id": "6a",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        "DASOFT",
+        "DASOFT",
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "6b",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        "BIOM",
+        "BIOM",
+        "BID",
+        "BID",
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "7",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "8a",
+      "schedule": [
+        "ADSOF",
+        "ADSOF",
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "BIP",
+        "BIP",
+        false
+      ]
+    },
+    {
+      "id": "8b",
+      "schedule": [
+        "ADSOF",
+        "ADSOF",
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "INGS",
+        "INGS",
+        false
+      ]
+    },
+    {
+      "id": "9",
+      "schedule": [
+        "INTART",
+        "INTART",
+        "PINGS",
+        "PINGS",
+        false,
+        false,
+        false,
+        false,
+        false,
+        "INGS",
+        "INGS",
+        false
+      ]
+    },
+    {
+      "id": "10",
+      "schedule": [
+        "INTART",
+        "INTART",
+        "PINGS",
+        "PINGS",
+        false,
+        "ARQRED2",
+        "ARQRED2",
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "11",
+      "schedule": [
+        "SI2",
+        "SI2",
+        "REDES2",
+        "REDES2",
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "12",
+      "schedule": [
+        false,
+        false,
+        "REDES2",
+        "REDES2",
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "13",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "CFC-HPC",
+        "CFC-HPC",
+        false
+      ]
+    },
+    {
+      "id": "14",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "MICRO",
+        "MICRO",
+        false
+      ]
+    },
+    {
+      "id": "15",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        "PRG2",
+        "PRG2",
+        false,
+        "SNCI",
+        "SNCI",
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "16",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        "PPROG",
+        false,
+        false,
+        false,
+        false,
+        "MICRO",
+        "MICRO",
+        false
+      ]
+    }
+  ],
+  "4": [
+    {
+      "id": "1",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        "TCOMM",
+        "TCOMM",
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "2",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        "PROG2",
+        "PROG2",
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "3",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "SI2",
+        "SI2",
+        false
+      ]
+    },
+    {
+      "id": "4",
+      "schedule": [
+        "TSM",
+        "TSM",
+        false,
+        false,
+        false,
+        "SISTINF",
+        "SISTINF",
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "5a",
+      "schedule": [
+        false,
+        false,
+        "EC",
+        "EC",
+        false,
+        false,
+        false,
+        false,
+        false,
+        "APS",
+        "APS",
+        false
+      ]
+    },
+    {
+      "id": "5b",
+      "schedule": [
+        "CIRDIG",
+        "CIRDIG",
+        "EC",
+        "EC",
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "6a",
+      "schedule": [
+        "RM",
+        "RM",
+        false,
+        false,
+        false,
+        false,
+        "UCAMI",
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "6b",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        "TASVV",
+        "TASVV",
+        "CBNT",
+        "CBNT",
+        "AAHS",
+        "AAHS",
+        false
+      ]
+    },
+    {
+      "id": "7",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "8a",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        "ADSOF",
+        "ADSOF",
+        "PADSOF",
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "8b",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "PADSOF",
+        false,
+        false,
+        false,
+        "PADSOF",
+        false
+      ]
+    },
+    {
+      "id": "9",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "PADSOF",
+        false
+      ]
+    },
+    {
+      "id": "10",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        "ARQRED2",
+        "ARQRED2",
+        false,
+        false,
+        false,
+        "PADSOF",
+        false
+      ]
+    },
+    {
+      "id": "11",
+      "schedule": [
+        "SOPER",
+        "SOPER",
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "SI2",
+        "SI2",
+        false
+      ]
+    },
+    {
+      "id": "12",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        "SOPER",
+        "SOPER",
+        false,
+        false,
+        false,
+        false,
+        "PADSOF",
+        false
+      ]
+    },
+    {
+      "id": "13",
+      "schedule": [
+        false,
+        false,
+        "CFD",
+        "CFD",
+        "CFD",
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "14",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "15",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        "PRG2",
+        "PRG2",
+        false,
+        "ASUM",
+        "ASUM",
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "16",
+      "schedule": [
+        false,
+        false,
+        "PPROG",
+        "PPROG",
+        false,
+        false,
+        false,
+        false,
+        false,
+        "PINGS",
+        "PINGS",
+        false
+      ]
+    }
+  ],
+  "5": [
+    {
+      "id": "1",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        "TCOMM",
+        "TCOMM",
+        false,
+        "PROG2",
+        "PROG2",
+        false,
+        false
+      ]
+    },
+    {
+      "id": "2",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "DADM",
+        "DADM",
+        false
+      ]
+    },
+    {
+      "id": "3",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "DADM",
+        "DADM",
+        false
+      ]
+    },
+    {
+      "id": "4",
+      "schedule": [
+        "TSM",
+        "TSM",
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "DADM",
+        "DADM",
+        false
+      ]
+    },
+    {
+      "id": "5a",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "5b",
+      "schedule": [
+        "CIRDIG",
+        "CIRDIG",
+        false,
+        false,
+        "CIRDIG",
+        "CIRDIG",
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "6a",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "SEDU",
+        "SEDU",
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "6b",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "MASGDTIC",
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "7",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "8a",
+      "schedule": [
+        false,
+        "PADSOF",
+        "REDES2",
+        "REDES2",
+        false,
+        false,
+        "ADSOF",
+        "ADSOF",
+        "ADSOF",
+        "ADSOF",
+        false,
+        false
+      ]
+    },
+    {
+      "id": "8b",
+      "schedule": [
+        false,
+        "PADSOF",
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "ADSOF",
+        "ADSOF",
+        false,
+        false
+      ]
+    },
+    {
+      "id": "9",
+      "schedule": [
+        false,
+        "PINGS",
+        "INTART",
+        "INTART",
+        false,
+        false,
+        "INTART",
+        "INTART",
+        "INTART",
+        "INTART",
+        false,
+        false
+      ]
+    },
+    {
+      "id": "10",
+      "schedule": [
+        false,
+        "PINGS",
+        "INTART",
+        "INTART",
+        false,
+        false,
+        "REDES2",
+        "REDES2",
+        "REDES2",
+        "REDES2",
+        false,
+        false
+      ]
+    },
+    {
+      "id": "11",
+      "schedule": [
+        false,
+        false,
+        "REDES2",
+        "REDES2",
+        false,
+        false,
+        false,
+        false,
+        "SOPER",
+        "SOPER",
+        false,
+        false
+      ]
+    },
+    {
+      "id": "12",
+      "schedule": [
+        false,
+        false,
+        "REDES2",
+        "REDES2",
+        false,
+        false,
+        false,
+        false,
+        "SOPER",
+        "SOPER",
+        false,
+        false
+      ]
+    },
+    {
+      "id": "13",
+      "schedule": [
+        false,
+        false,
+        "CFD",
+        "CFD",
+        "CFD",
+        false,
+        false,
+        false,
+        "CFC-HPC",
+        "CFC-HPC",
+        "CFC-HPC",
+        false
+      ]
+    },
+    {
+      "id": "14",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "MICRO",
+        "MICRO",
+        false,
+        false
+      ]
+    },
+    {
+      "id": "15",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        "PRG2",
+        "PRG2",
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "16",
+      "schedule": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        "MICRO",
+        "MICRO",
+        false,
+        false
+      ]
+    }
+  ]
+}
