@@ -120,6 +120,17 @@ h1 {
   text-shadow: 0 0 3px black;
   vertical-align: center;
 }
+.ribbon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 0;
+  opacity: 0.4;
+  transition: 0.5s opacity;
+}
+.ribbon:hover {
+  opacity: 1;
+}
 footer {
   min-height: 4em;
 }
@@ -130,7 +141,8 @@ footer hr {
   box-sizing: content-box;
   height: 0;
 }
-footer p {
+footer p,
+footer small {
   text-align: center;
   margin-bottom: 0;
 }
