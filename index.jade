@@ -1,7 +1,7 @@
 doctype html
 html(lang='es' xmlns='http://www.w3.org/1999/xhtml')
 	head
-		title [michis.me] Laboratorios libres
+		title [labs.michis.me] Laboratorios libres
 
 		//- Metadatos
 		meta(charset='utf-8')
@@ -32,12 +32,12 @@ html(lang='es' xmlns='http://www.w3.org/1999/xhtml')
 					li.lab#8a
 					li.lab#7.double
 
-				//- Inferiores == oeste
-				ul.lab-group.south.west
-					li.lab#9
-					li.lab#10
-					li.lab#11
-					li.lab#12
+				//- Superiores == este
+				ul.lab-group.north.east
+					li.lab#6b
+					li.lab#6a
+					li.lab#5b
+					li.lab#5a
 
 				//- Centrales
 				ul.lab-group.center
@@ -45,12 +45,12 @@ html(lang='es' xmlns='http://www.w3.org/1999/xhtml')
 					li.lab#15
 					li.lab#16
 
-				//- Superiores == este
-				ul.lab-group.north.east
-					li.lab#6b
-					li.lab#6a
-					li.lab#5b
-					li.lab#5a
+				//- Inferiores == oeste
+				ul.lab-group.south.west
+					li.lab#9
+					li.lab#10
+					li.lab#11
+					li.lab#12
 
 				//- Inferiores == este
 				ul.lab-group.south.east
@@ -61,19 +61,15 @@ html(lang='es' xmlns='http://www.w3.org/1999/xhtml')
 
 			footer
 				hr
-				p Tambien puede interesarte mi&nbsp;
+				p ¿Ya estas en un laboratorio? Tambien puede interesarte mi&nbsp;
 					a(href="https://github.com/ManuelBlanc/eps-dotfiles") configuración
 					|  para los laboratorios.
-					small  (¿Has encontrado un problema? ¡Ponte en contacto&nbsp;
-						a(href="http://github.com/ManuelBlanc") conmigo
-						|!
 
-			a.ribbon(href='https://github.com/ManuelBlanc/ManuelBlanc.github.io')
-				img(src='img/github_ribbon.png' alt='Fork me on GitHub')
+		a.ribbon(href='https://github.com/ManuelBlanc/ManuelBlanc.github.io')
+			img(src='img/github_ribbon.png' alt='Fork me on GitHub')
 
 		//- Codigo en el body para que cargue mas rapido el html
 		script(type='text/javascript' src='lib/jquery-2.1.3.min.js')
-		script(type='text/javascript' src='lib/d3/d3.js')
 		script(type='text/javascript' src='app.js')
 		//- Github ribbon
 

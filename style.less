@@ -3,17 +3,22 @@
 @norm-color: #555;
 @free-color: hsla(120, 50%, 27%, 1);
 @busy-color: hsla(0, 75%, 27%, 1);
+// #8E388E Morado // #ee7600 Naranja
 
+
+// Normalizacion
 html {
 	background: none;
 	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 14px;
 
-	// Robado de http://hslpicker.com
+	// Gradiente robado de http://hslpicker.com
 	-webkit-background-size: 150px 150px;
 	-moz-background-size: 150px 150px;
 	-o-background-size: 150px 150px;
 	background-size: 150px 150px;
+	@stripe0: rgba(0, 0, 0, 0.0);
+	@stripe1: rgba(0, 0, 0, 0.1);
 	background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(25%, rgba(0, 0, 0, 0.1)), color-stop(25%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0.1)), color-stop(75%, rgba(0, 0, 0, 0.1)), color-stop(75%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
 	background-image: -webkit-linear-gradient(top right, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
 	background-image: -moz-linear-gradient(top right, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
@@ -46,7 +51,6 @@ h1 {
 .container {
 	// Geometria
 	min-height: 100%;
-
 	width: 70%;
 	left: 15%;
 	@media screen and (max-width: 600px) {
@@ -176,9 +180,7 @@ footer {
 	p, small {
 		text-align: center;
 		margin-bottom: 0;
+		padding: 0 4em;
 	}
-	min-height: 4em;
+	min-height: 5em;
 }
-
-//	busy ? (next ? "#8B0000" : "#8E388E")
-//	     : (next ? "#ee7600" : "#555555"));

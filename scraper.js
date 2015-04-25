@@ -43,6 +43,7 @@ function inject_name_normalizer() {
 		[ "Tecnicas Analisis Secuencias Video Videovigilancia"	, "TASVV"  	],
 		[ "Curso Formacion Docente"                           	, "CFD"    	],
 		[ "Proyecto de Programacion"                          	, "PPROG"  	],
+		[ "PPROG-2122"                                        	, "PPROG"  	],
 		[ "Programacion II"                                   	, "PROG2"  	],
 	];
 	window.normalizeActivityName = function(str) {

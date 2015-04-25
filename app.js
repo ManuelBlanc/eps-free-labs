@@ -26,47 +26,56 @@ $(function() {
 		return hash;
 	}
 
-	setTimeout(function() {
-		$.getJSON("timetable.json", function(timetable, status) {
+	// From StackOverflow: http://stackoverflow.com/a/21152762/3080396
+	var qd = {};
+	location.search.substr(1).split("&").forEach(function(item) {
+		var k = item.split("=")[0],
+		    v = decodeURIComponent(item.split("=")[1]);
+		if (k in qd) qd[k].push(v);
+		else         qd[k] = [v,];
+	});
 
-			var now = new Date();
-			var day = now.getDay()-0;
-			var hour = now.getHours() - 9; // Timetable starts at 9 o'clock
+	var now  = new Date();
+	var day  = $.isNumeric(qd.day)  || qd.day  || now.getDay();
+	var hour = $.isNumeric(qd.hour) || qd.hour || now.getHours() - 9;
+	// Timetable starts at 9 o'clock
 
-			if ((day <= 0 || day > 6) || (hour < 0 || hour > 11)) {
-				$(".lab").addClass("busy");
-				return;
+	// Test if the day and hour are in-range
+	if ((day <= 0 || day >= 6) || (hour < 0 || hour > 11)) {
+		$(".lab").addClass("busy");
+		return; // Abort
+	}
+
+	// Fetch the timetable
+	$.getJSON("timetable.json", function(timetable, status) {
+		timetable[day].forEach(function(lab) {
+			var self = $("#" + lab.id);
+			if (!self) return; // No esta el laboratorio en el plano
+
+			var activity = lab.schedule[hour];
+			self.toggleClass("busy", !!activity);
+			self.toggleClass("free", !!!activity);
+			self.children(".activity").text(activity || "");
+
+			var timeUntilChange = self.children(".timeUntilChange");
+			var howMuch = "";
+
+			if (activity) {
+				howMuch = "> 2 hours";
+				if (!lab.schedule[hour+2]) {
+					howMuch = (60 - now.getMinutes()) + (lab.schedule[hour+1] ? 60 : 0) + " min";
+				}
 			}
-
-			timetable[day].forEach(function(lab) {
-				var self = $("#" + lab.id);
-				if (!self) return; // No esta el laboratorio en el plano
-
-				var activity = lab.schedule[hour];
-				self.toggleClass("busy", !!activity);
-				self.toggleClass("free", !!!activity);
-				self.children(".activity").text(activity || "");
-
-				var timeUntilChange = self.children(".timeUntilChange");
-				var howMuch = "";
-
-				if (activity) {
-					howMuch = "> 2 hours";
-					if (!lab.schedule[hour+2]) {
-						howMuch = (60 - now.getMinutes()) + (lab.schedule[hour+1] ? 60 : 0) + " min";
-					}
+			else {
+				if (lab.schedule[hour+2]) {
+					howMuch = (60 - now.getMinutes()) + (!lab.schedule[hour+1] ? 60 : 0) + " min";
 				}
 				else {
-					if (lab.schedule[hour+2]) {
-						howMuch = (60 - now.getMinutes()) + (!lab.schedule[hour+1] ? 60 : 0) + " min";
-					}
-					else {
-						self.addClass("recommended");
-					}
+					self.addClass("recommended");
 				}
-				timeUntilChange.text(howMuch);
+			}
+			timeUntilChange.text(howMuch);
 
-			});
 		});
-	}, 1);
+	});
 });
