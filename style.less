@@ -35,21 +35,15 @@ h2 {
 	.west, .east {
 		.make-xs-column(12);
 		.make-sm-column(6);
+		// Un poquito de padding
+		padding: 0 2em;
 	}
-	// Un poquito de padding
-	.east { padding-left:  2em; }
-	.west { padding-right: 2em; }
-	.north, .south {
-		.make-row();
-	}
-	.north {
-		margin-bottom: 0.5em;
-	}
-	.south {
-		margin-bottom: 2em;
-	}
+	.north, .south { .make-row(); }
+	.north { margin-bottom: 0.5em; }
+	.south { margin-bottom: 1.5em; }
 
 	.middle {
+		padding: 0 2em;
 		.make-xs-column(12);
 		.lab { .make-xs-column-push(1.5); }
 		.make-sm-column(6);
@@ -110,7 +104,7 @@ h2 {
 }
 
 @keyframes heartbeat {
-	from { .scale(1.05); }
+	from { .scale(10); }
 	to   { .scale(1.00); }
 }
 @-webkit-keyframes heartbeat {
@@ -135,7 +129,7 @@ footer {
 			display: inline-block;
 			color: darkred;
 			position: relative;
-			.animation(heartbeat 1s infinite);
+			.animation(heartbeat 1s ease-in 1s infinite);
 			&:before { content: "❤"; }
 		}
 	}

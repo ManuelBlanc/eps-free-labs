@@ -22,10 +22,10 @@ $(function() {
 		qd[pair[0]] = decodeURIComponent(item.split("=")[1]);
 	});
 
+	// Timetable starts at 9 o'clock
 	var now  = new Date();
 	var day  = ("day"  in qd) ? parseInt(qd.day, 10)  : now.getDay();
 	var hour = ("hour" in qd) ? parseInt(qd.hour, 10) : (now.getHours() - 9);
-	// Timetable starts at 9 o'clock
 
 
 	// Test if the day and hour are in-range
