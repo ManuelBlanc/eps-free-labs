@@ -39,8 +39,8 @@ h2 {
 		padding: 0 2em;
 	}
 	.north, .south { .make-row(); }
-	.north { margin-bottom: 0.5em; }
-	.south { margin-bottom: 1.5em; }
+	.north { margin-bottom: 0.3em; }
+	.south { margin-bottom: 1.2em; }
 
 	.middle {
 		padding: 0 2em;
@@ -63,7 +63,7 @@ h2 {
 		box-shadow: inset 0 0 2px black;
 
 		// Posicion y tamaño
-		height: 7em !important;
+		min-height: 7.5em !important;
 		padding: 0;
 
 		// Redondeamos los bordes del primero y el ultimo
@@ -104,12 +104,12 @@ h2 {
 }
 
 @keyframes heartbeat {
-	from { .scale(10); }
-	to   { .scale(1.00); }
+	from { .scale(1.1); }
+	to   { .scale(1.0); }
 }
 @-webkit-keyframes heartbeat {
-	from { .scale(1.05); }
-	to   { .scale(1.00); }
+	from { .scale(1.1); }
+	to   { .scale(1.0); }
 }
 
 footer {
@@ -129,7 +129,7 @@ footer {
 			display: inline-block;
 			color: darkred;
 			position: relative;
-			.animation(heartbeat 1s ease-in 1s infinite);
+			.animation(heartbeat 1s ease-out infinite);
 			&:before { content: "❤"; }
 		}
 	}
@@ -150,6 +150,7 @@ footer {
 	min-width:  98px;
 	height: 7em;
 	width:  7em;
+	z-index: 999;
 	// Opacity
 	opacity: 0.6;
 	.transition(0.5s opacity);
