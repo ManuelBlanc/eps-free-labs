@@ -12,48 +12,55 @@
     <meta name="description" content="¿Qué laboratorios estan libres? Compruebalo rapidamente.">
     <meta name="author" content="MBlanc">
     <link href="img/favicon.ico?v=1" rel="shortcut icon" type="image/x-icon">
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="app.js"></script><!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   </head>
   <body>
-    <div class="container">
-      <h1>¿Qué&nbsp;laboratorios estan&nbsp;libres?</h1>
+    <div class="container-fluid">
+      <h2 class="text-center">¿Qué&nbsp;laboratorios estan&nbsp;libres?</h2>
       <div class="floorplan">
-        <ul class="lab-group north west">
-          <li id="8b" class="lab"></li>
-          <li id="8a" class="lab"></li>
-          <li id="7" class="lab double"></li>
-        </ul>
-        <ul class="lab-group north east">
-          <li id="6b" class="lab"></li>
-          <li id="6a" class="lab"></li>
-          <li id="5b" class="lab"></li>
-          <li id="5a" class="lab"></li>
-        </ul>
-        <ul class="lab-group center">
-          <li id="14" class="lab"></li>
-          <li id="15" class="lab"></li>
-          <li id="16" class="lab"></li>
-        </ul>
-        <ul class="lab-group south west">
-          <li id="9" class="lab"></li>
-          <li id="10" class="lab"></li>
-          <li id="11" class="lab"></li>
-          <li id="12" class="lab"></li>
-        </ul>
-        <ul class="lab-group south east">
-          <li id="1" class="lab"></li>
-          <li id="2" class="lab"></li>
-          <li id="3" class="lab"></li>
-          <li id="4" class="lab"></li>
-        </ul>
+        <div class="west">
+          <div class="north">
+            <div id="8b" class="lab"></div>
+            <div id="8a" class="lab"></div>
+            <div id="7" class="lab double"></div>
+          </div>
+          <div class="south">
+            <div id="9" class="lab"></div>
+            <div id="10" class="lab"></div>
+            <div id="11" class="lab"></div>
+            <div id="12" class="lab"></div>
+          </div>
+        </div>
+        <div class="east">
+          <div class="north">
+            <div id="6b" class="lab"></div>
+            <div id="6a" class="lab"></div>
+            <div id="5b" class="lab"></div>
+            <div id="5a" class="lab"></div>
+          </div>
+          <div class="south">
+            <div id="1" class="lab"></div>
+            <div id="2" class="lab"></div>
+            <div id="3" class="lab"></div>
+            <div id="4" class="lab"></div>
+          </div>
+        </div>
+        <div class="middle">
+          <div id="14" class="lab"></div>
+          <div id="15" class="lab"></div>
+          <div id="16" class="lab"></div>
+        </div>
       </div>
-      <footer>
-        <hr>
-        <p>¿Ya estas en un laboratorio? Tambien puede interesarte mi&nbsp;<a href="https://github.com/ManuelBlanc/eps-dotfiles">configuración</a> para los laboratorios.</p>
-      </footer>
     </div>
+    <footer><a href="https://github.com/ManuelBlanc/ManuelBlanc.github.io" title="Fork me on GitHub" class="ribbon"></a>
+      <hr>
+      <p>Creado con <span class='heart'></span> por&nbsp;<a href="http://github.com/ManuelBlanc" target="_blank">Manuel Blanc.</a><small> ¡Gracias a todos los que me echaron un cable!</small>
+      </p>
+    </footer>
   </body>
 </html>

@@ -1,107 +1,146 @@
-html {
-  background: none;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 14px;
-  -webkit-background-size: 150px 150px;
-  -moz-background-size: 150px 150px;
-  -o-background-size: 150px 150px;
-  background-size: 150px 150px;
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(25%, rgba(0, 0, 0, 0.1)), color-stop(25%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0.1)), color-stop(75%, rgba(0, 0, 0, 0.1)), color-stop(75%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(top right, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
-  background-image: -moz-linear-gradient(top right, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
-  background-image: -o-linear-gradient(top right, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
-  background-image: linear-gradient(top right, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
-  background-color: #33333a;
+.floorplan:before,
+.floorplan:after,
+.floorplan .north:before,
+.floorplan .north:after,
+.floorplan .south:before,
+.floorplan .south:after {
+  content: " ";
+  display: table;
+}
+.floorplan:after,
+.floorplan .north:after,
+.floorplan .south:after {
+  clear: both;
 }
 html,
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 100%;
-  height: auto !important;
   height: 100%;
-  position: fixed;
-  overflow-x: scroll;
-  box-sizing: border-box;
+  background-color: #999;
 }
-h1 {
-  color: #111;
-  font-size: 3em;
-  font-family: Georgia;
-  text-align: center;
-  margin: 1em auto 0.5em;
+.container-fluid {
+  position: relative;
+  background-color: #afafaf;
+  padding-top: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-shadow: 0 12px 50px -12px rgba(0, 0, 0, 0.5);
 }
-.container {
-  min-height: 100%;
-  width: 70%;
-  left: 15%;
-  position: absolute;
-  background: #aaa;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
-  box-shadow: inset 0 0 10em #222;
-}
-@media screen and (max-width: 600px) {
-  .container {
-    left: 0% !important;
-    width: 100% !important;
-  }
+h2 {
+  margin-bottom: 1em;
 }
 .floorplan {
-  padding: 0;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin: 0 auto;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-bottom: 3em;
+}
+.floorplan .west,
+.floorplan .east {
+  float: left;
+  width: 100%;
   position: relative;
-  text-align: center;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-.floorplan .lab-group {
-  background-color: black;
-  padding: 0.2em;
-  display: inline-block;
-  overflow: auto;
-  box-shadow: 5px 5px 5px #555;
-  border-radius: 10px;
+@media (min-width: 768px) {
+  .floorplan .west,
+  .floorplan .east {
+    float: left;
+    width: 50%;
+  }
 }
-.floorplan .lab-group.center {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  width: 18em;
+.floorplan .east {
+  padding-left: 2em;
+}
+.floorplan .west {
+  padding-right: 2em;
+}
+.floorplan .north,
+.floorplan .south {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.floorplan .north {
+  margin-bottom: 0.5em;
+}
+.floorplan .south {
+  margin-bottom: 2em;
+}
+.floorplan .middle {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.floorplan .middle .lab {
+  left: 12.5%;
+}
+@media (min-width: 768px) {
+  .floorplan .middle {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .floorplan .middle {
+    margin-left: 25%;
+  }
 }
 .floorplan .lab {
   position: relative;
   float: left;
-  height: 6em;
-  width: 6em;
+  width: 25%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
   color: #eee;
   background: white;
   background-color: #555555;
-  box-shadow: inset 0 0 3px black;
-  list-style: none;
-  /*
-		&.free {
-			background-image: linear-gradient(lighten(@free-color, 10%), @free-color);
-		}
-		*/
+  box-shadow: inset 0 0 2px black;
+  height: 7em !important;
+  padding: 0;
 }
 .floorplan .lab.double {
-  width: 12em;
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .floorplan .lab:first-child {
-  margin-left: 0;
-  border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
 }
 .floorplan .lab:last-child {
-  border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
 }
 .floorplan .lab.busy {
-  background: linear-gradient(#a51818, #781111);
+  background-image: -webkit-linear-gradient(top, rgba(189, 0, 0, 0.85) 0%, rgba(138, 0, 0, 0.85) 100%);
+  background-image: -o-linear-gradient(top, rgba(189, 0, 0, 0.85) 0%, rgba(138, 0, 0, 0.85) 100%);
+  background-image: linear-gradient(to bottom, rgba(189, 0, 0, 0.85) 0%, rgba(138, 0, 0, 0.85) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d9bd0000', endColorstr='#d98a0000', GradientType=0);
+}
+.floorplan .lab.free {
+  background-image: -webkit-linear-gradient(top, rgba(17, 120, 17, 0.85) 0%, rgba(15, 103, 15, 0.85) 100%);
+  background-image: -o-linear-gradient(top, rgba(17, 120, 17, 0.85) 0%, rgba(15, 103, 15, 0.85) 100%);
+  background-image: linear-gradient(to bottom, rgba(17, 120, 17, 0.85) 0%, rgba(15, 103, 15, 0.85) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d9117811', endColorstr='#d90f670f', GradientType=0);
+}
+.floorplan .lab.soon {
+  background-image: -webkit-linear-gradient(top, rgba(228, 120, 12, 0.95) 0%, rgba(203, 107, 11, 0.95) 100%);
+  background-image: -o-linear-gradient(top, rgba(228, 120, 12, 0.95) 0%, rgba(203, 107, 11, 0.95) 100%);
+  background-image: linear-gradient(to bottom, rgba(228, 120, 12, 0.95) 0%, rgba(203, 107, 11, 0.95) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2e4780c', endColorstr='#f2cb6b0b', GradientType=0);
 }
 .floorplan .lab .info {
+  text-align: center;
   display: inline-block;
   width: 100%;
   font-size: 0.8em;
@@ -120,30 +159,78 @@ h1 {
   text-shadow: 0 0 3px black;
   vertical-align: center;
 }
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  to {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  to {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+footer {
+  text-align: center;
+  position: relative;
+}
+footer hr {
+  margin-top: 0;
+  width: 100%;
+  height: 12px;
+  border: 0;
+}
+footer p {
+  display: block;
+  margin: 0 auto;
+  padding: 0 0 20px 0;
+}
+footer p span.heart {
+  display: inline-block;
+  color: darkred;
+  position: relative;
+  -webkit-animation: heartbeat 1s infinite;
+  -o-animation: heartbeat 1s infinite;
+  animation: heartbeat 1s infinite;
+}
+footer p span.heart:before {
+  content: "❤";
+}
+footer small {
+  display: block;
+}
 .ribbon {
-  position: fixed;
+  background: url('img/github_ribbon.png') no-repeat;
+  background-size: contain;
+  position: absolute;
   top: 0;
   left: 0;
-  border: 0;
-  opacity: 0.4;
+  min-height: 98px;
+  min-width: 98px;
+  height: 7em;
+  width: 7em;
+  opacity: 0.6;
+  -webkit-transition: 0.5s opacity;
+  -o-transition: 0.5s opacity;
   transition: 0.5s opacity;
 }
 .ribbon:hover {
   opacity: 1;
-}
-footer {
-  min-height: 5em;
-}
-footer hr {
-  border: none;
-  border-top: 1px solid black;
-  max-width: 90%;
-  box-sizing: content-box;
-  height: 0;
-}
-footer p,
-footer small {
-  text-align: center;
-  margin-bottom: 0;
-  padding: 0 4em;
 }

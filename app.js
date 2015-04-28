@@ -15,30 +15,18 @@ $(function() {
 		lab.append(" <span class='info timeUntilChange'></span>");
 	});
 
-	// String hash function
-	function hashCode(str) {
-		var hash = 0, i, chr, len;
-		for (i = 0, len = str.length; i < len; i++) {
-			chr   = str.charCodeAt(i);
-			hash  = ((hash << 5) - hash) + chr;
-			hash |= 0; // Convert to 32bit integer
-		}
-		return hash;
-	}
-
-	// From StackOverflow: http://stackoverflow.com/a/21152762/3080396
+	// Basado en esta respuesta: http://stackoverflow.com/a/21152762/3080396
 	var qd = {};
 	location.search.substr(1).split("&").forEach(function(item) {
-		var k = item.split("=")[0],
-		    v = decodeURIComponent(item.split("=")[1]);
-		if (k in qd) qd[k].push(v);
-		else         qd[k] = [v,];
+		var pair = item.split("=");
+		qd[pair[0]] = decodeURIComponent(item.split("=")[1]);
 	});
 
 	var now  = new Date();
-	var day  = $.isNumeric(qd.day)  || qd.day  || now.getDay();
-	var hour = $.isNumeric(qd.hour) || qd.hour || now.getHours() - 9;
+	var day  = ("day"  in qd) ? parseInt(qd.day, 10)  : now.getDay();
+	var hour = ("hour" in qd) ? parseInt(qd.hour, 10) : (now.getHours() - 9);
 	// Timetable starts at 9 o'clock
+
 
 	// Test if the day and hour are in-range
 	if ((day <= 0 || day >= 6) || (hour < 0 || hour > 11)) {
@@ -53,26 +41,31 @@ $(function() {
 			if (!self) return; // No esta el laboratorio en el plano
 
 			var activity = lab.schedule[hour];
-			self.toggleClass("busy", !!activity);
-			self.toggleClass("free", !!!activity);
+
 			self.children(".activity").text(activity || "");
 
 			var timeUntilChange = self.children(".timeUntilChange");
-			var howMuch = "";
+			var howMuch = "", i;
 
 			if (activity) {
-				howMuch = "> 2 hours";
-				if (!lab.schedule[hour+2]) {
-					howMuch = (60 - now.getMinutes()) + (lab.schedule[hour+1] ? 60 : 0) + " min";
+				self.addClass("busy");
+				// Calculamos dentro de cuanto estara desocupado
+				howMuch = -now.getMinutes();
+				for (i = hour; i < 12; i++) {
+					if (lab.schedule[i]) howMuch += 60;
+					else break;
 				}
+				howMuch += " min";
 			}
 			else {
-				if (lab.schedule[hour+2]) {
-					howMuch = (60 - now.getMinutes()) + (!lab.schedule[hour+1] ? 60 : 0) + " min";
+				if (lab.schedule[hour+1]) {
+					howMuch = (60 - now.getMinutes()) + " min";
+					self.addClass("soon", (i == 12));
 				}
-				else {
-					self.addClass("recommended");
+				for (i = hour; i < 12; i++) {
+					if (lab.schedule[i]) break;
 				}
+				self.toggleClass("free", (i == 12));
 			}
 			timeUntilChange.text(howMuch);
 
