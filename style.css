@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800,600,400);
 .floorplan:before,
 .floorplan:after,
 .floorplan .north:before,
@@ -16,6 +17,7 @@ html,
 body {
   height: 100%;
   background-color: #999;
+  font-family: 'Open Sans', sans-serif;
 }
 .container-fluid {
   position: relative;
@@ -27,6 +29,11 @@ body {
 }
 h2 {
   margin-bottom: 1em;
+  font-weight: 600;
+}
+h2 strong {
+  font-weight: 800;
+  font-style: italic;
 }
 .floorplan {
   margin-left: -15px;
@@ -56,7 +63,7 @@ h2 {
   margin-right: -15px;
 }
 .floorplan .north {
-  margin-bottom: 0.3em;
+  margin-bottom: 0em;
 }
 .floorplan .south {
   margin-bottom: 1.2em;
@@ -91,12 +98,13 @@ h2 {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  color: #eee;
-  background: white;
-  background-color: #555555;
-  box-shadow: inset 0 0 2px black;
   min-height: 7.5em !important;
   padding: 0;
+  border-top: 1px solid #6f6f6f;
+  border-right: 1px solid #6f6f6f;
+  border-left: 2px solid #484848;
+  border-bottom: 2px solid #484848;
+  background: linear-gradient(#6f6f6f, #555555);
 }
 .floorplan .lab.double {
   position: relative;
@@ -106,53 +114,77 @@ h2 {
   padding-left: 15px;
   padding-right: 15px;
 }
-.floorplan .lab:first-child {
-  border-bottom-left-radius: 8px;
-  border-top-left-radius: 8px;
-}
-.floorplan .lab:last-child {
-  border-bottom-right-radius: 8px;
-  border-top-right-radius: 8px;
+.floorplan .lab:focus {
+  border-left: 1px solid #6f6f6f;
+  border-bottom: 1px solid #6f6f6f;
+  border-top: 2px solid #484848;
+  border-right: 2px solid #484848;
+  background: linear-gradient(#484848, #626262);
 }
 .floorplan .lab.busy {
-  background-image: -webkit-linear-gradient(top, rgba(189, 0, 0, 0.85) 0%, rgba(138, 0, 0, 0.85) 100%);
-  background-image: -o-linear-gradient(top, rgba(189, 0, 0, 0.85) 0%, rgba(138, 0, 0, 0.85) 100%);
-  background-image: linear-gradient(to bottom, rgba(189, 0, 0, 0.85) 0%, rgba(138, 0, 0, 0.85) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d9bd0000', endColorstr='#d98a0000', GradientType=0);
+  border-top: 1px solid rgba(189, 0, 0, 0.85);
+  border-right: 1px solid rgba(189, 0, 0, 0.85);
+  border-left: 2px solid rgba(112, 0, 0, 0.85);
+  border-bottom: 2px solid rgba(112, 0, 0, 0.85);
+  background: linear-gradient(rgba(189, 0, 0, 0.85), rgba(138, 0, 0, 0.85));
 }
-.floorplan .lab.free {
-  background-image: -webkit-linear-gradient(top, rgba(17, 120, 17, 0.85) 0%, rgba(15, 103, 15, 0.85) 100%);
-  background-image: -o-linear-gradient(top, rgba(17, 120, 17, 0.85) 0%, rgba(15, 103, 15, 0.85) 100%);
-  background-image: linear-gradient(to bottom, rgba(17, 120, 17, 0.85) 0%, rgba(15, 103, 15, 0.85) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d9117811', endColorstr='#d90f670f', GradientType=0);
+.floorplan .lab.busy:focus {
+  border-left: 1px solid rgba(189, 0, 0, 0.85);
+  border-bottom: 1px solid rgba(189, 0, 0, 0.85);
+  border-top: 2px solid rgba(112, 0, 0, 0.85);
+  border-right: 2px solid rgba(112, 0, 0, 0.85);
+  background: linear-gradient(rgba(112, 0, 0, 0.85), rgba(163, 0, 0, 0.85));
 }
 .floorplan .lab.soon {
-  background-image: -webkit-linear-gradient(top, rgba(228, 120, 12, 0.95) 0%, rgba(203, 107, 11, 0.95) 100%);
-  background-image: -o-linear-gradient(top, rgba(228, 120, 12, 0.95) 0%, rgba(203, 107, 11, 0.95) 100%);
-  background-image: linear-gradient(to bottom, rgba(228, 120, 12, 0.95) 0%, rgba(203, 107, 11, 0.95) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2e4780c', endColorstr='#f2cb6b0b', GradientType=0);
+  border-top: 1px solid rgba(228, 120, 12, 0.95);
+  border-right: 1px solid rgba(228, 120, 12, 0.95);
+  border-left: 2px solid rgba(155, 82, 8, 0.95);
+  border-bottom: 2px solid rgba(155, 82, 8, 0.95);
+  background: linear-gradient(rgba(228, 120, 12, 0.95), rgba(179, 94, 9, 0.95));
+}
+.floorplan .lab.soon:focus {
+  border-left: 1px solid rgba(228, 120, 12, 0.95);
+  border-bottom: 1px solid rgba(228, 120, 12, 0.95);
+  border-top: 2px solid rgba(155, 82, 8, 0.95);
+  border-right: 2px solid rgba(155, 82, 8, 0.95);
+  background: linear-gradient(rgba(155, 82, 8, 0.95), rgba(203, 107, 11, 0.95));
+}
+.floorplan .lab.free {
+  border-top: 1px solid rgba(24, 165, 24, 0.85);
+  border-right: 1px solid rgba(24, 165, 24, 0.85);
+  border-left: 2px solid rgba(14, 98, 14, 0.85);
+  border-bottom: 2px solid rgba(14, 98, 14, 0.85);
+  background: linear-gradient(rgba(24, 165, 24, 0.85), rgba(17, 120, 17, 0.85));
+}
+.floorplan .lab.free:focus {
+  border-left: 1px solid rgba(24, 165, 24, 0.85);
+  border-bottom: 1px solid rgba(24, 165, 24, 0.85);
+  border-top: 2px solid rgba(14, 98, 14, 0.85);
+  border-right: 2px solid rgba(14, 98, 14, 0.85);
+  background: linear-gradient(rgba(14, 98, 14, 0.85), rgba(20, 143, 20, 0.85));
 }
 .floorplan .lab .info {
   text-align: center;
   display: inline-block;
+  margin-top: 0.2em;
   width: 100%;
   font-size: 0.8em;
-  text-shadow: none;
-  margin-top: 0.2em;
-  color: #ffffff;
 }
 .floorplan .lab .info.activity {
+  color: rgba(255, 255, 255, 0.85);
   font-size: 1.2em;
   height: 1.2em;
+}
+.floorplan .lab .info.timeUntilChange {
+  color: rgba(255, 255, 255, 0.65);
 }
 .floorplan .lab .info.name {
   margin-top: 0;
   font-size: 2em;
-  font-weight: bolder;
-  text-shadow: 0 0 3px black;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: -1px 1px 0 rgba(204, 204, 204, 0.9);
+  opacity: 0.5;
   vertical-align: center;
 }
 @keyframes heartbeat {

@@ -2,16 +2,13 @@
 @import (reference) "lib/bootstrap/less/variables.less";
 @import (reference) "lib/bootstrap/less/mixins.less";
 
-// Paleta de colores
-@norm-color: #555;
-@free-color: hsla(120, 75%, 27%, 0.85);
-@busy-color: hsla(0, 100%, 27%, 0.85);
-@soon-color: hsla(30, 90%, 47%, 0.95);
-// #8E388E Morado
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800,600,400);
 
+// Paleta de colores
 html, body {
 	height: 100%;
 	background-color: #999;
+	font-family: 'Open Sans', sans-serif;
 }
 .container-fluid {
 	position: relative;
@@ -24,6 +21,11 @@ html, body {
 
 h2 {
 	margin-bottom: 1em;
+	font-weight: 600;
+	strong {
+		font-weight: 800;
+		font-style: italic;
+	}
 }
 
 // Contenedor del mapa
@@ -39,7 +41,7 @@ h2 {
 		padding: 0 2em;
 	}
 	.north, .south { .make-row(); }
-	.north { margin-bottom: 0.3em; }
+	.north { margin-bottom: 0em; }
 	.south { margin-bottom: 1.2em; }
 
 	.middle {
@@ -56,44 +58,54 @@ h2 {
 			.make-xs-column(6);
 		}
 
-		// El fondo
-		color: #eee;
-		background: white;
-		background-color: @norm-color;
-		box-shadow: inset 0 0 2px black;
-
 		// Posicion y tamaño
 		min-height: 7.5em !important;
 		padding: 0;
 
-		// Redondeamos los bordes del primero y el ultimo
-		&:first-child { .border-left-radius(8px);  }
-		&:last-child  { .border-right-radius(8px); }
+		.colorize-lab-mixin(@bg) {
+			border-top:     1px solid lighten(@bg, 10%);
+			border-right:   1px solid lighten(@bg, 10%);
+			border-left:    2px solid  darken(@bg, 5%);
+			border-bottom:  2px solid  darken(@bg, 5%);
+			background: linear-gradient(lighten(@bg, 10%), @bg);
 
-		&.busy { #gradient.vertical(lighten(@busy-color, 10%), @busy-color); }
-		&.free { #gradient.vertical(@free-color, darken(@free-color, 4%)); }
-		&.soon { #gradient.vertical(@soon-color, darken(@soon-color, 5%)); }
+			&:focus {
+				border-left:   1px solid lighten(@bg, 10%);
+				border-bottom: 1px solid lighten(@bg, 10%);
+				border-top:    2px solid  darken(@bg, 5%);
+				border-right:  2px solid  darken(@bg, 5%);
+				background: linear-gradient(darken(@bg, 5%), lighten(@bg, 5%));
+			}
+		}
+		         .colorize-lab-mixin(#555);
+		&.busy { .colorize-lab-mixin(hsla(0,   100%, 27%, 0.85)); }
+		&.soon { .colorize-lab-mixin(hsla(30,  90%,  37%, 0.95)); }
+		&.free { .colorize-lab-mixin(hsla(120, 75%,  27%, 0.85)); }
 
 		.info {
 			text-align: center;
 			display: inline-block;
+			margin-top: 0.2em;
 			width: 100%;
 
 			font-size: 0.8em;
 			&.activity {
+				color: fade(#fff, 85%);
 				font-size: 1.2em;
 				height: 1.2em;
 			}
+			&.timeUntilChange {
+				color: fade(#fff, 65%);
+			}
 
-			text-shadow: none;
-			margin-top: 0.2em;
-			color: lighten(#eee, 15%);
 
 			&.name {
 				margin-top: 0;
 				font-size: 2em;
-				font-weight: bolder;
-				text-shadow: 0 0 3px black;
+				font-weight: 800;
+				color: fade(#000, 70%);
+				text-shadow: -1px 1px 0 fade(#ccc, 90%);
+				opacity: 0.5;
 				vertical-align: center;
 			}
 		}
