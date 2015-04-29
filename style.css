@@ -102,8 +102,8 @@ h2 strong {
   padding: 0;
   border-top: 1px solid #6f6f6f;
   border-right: 1px solid #6f6f6f;
-  border-left: 2px solid #484848;
-  border-bottom: 2px solid #484848;
+  border-left: 1px solid #484848;
+  border-bottom: 1px solid #484848;
   background: linear-gradient(#6f6f6f, #555555);
 }
 .floorplan .lab.double {
@@ -117,51 +117,55 @@ h2 strong {
 .floorplan .lab:focus {
   border-left: 1px solid #6f6f6f;
   border-bottom: 1px solid #6f6f6f;
-  border-top: 2px solid #484848;
-  border-right: 2px solid #484848;
-  background: linear-gradient(#484848, #626262);
+  border-top: 1px solid #484848;
+  border-right: 1px solid #484848;
+  background: linear-gradient(#484848, #555555);
+  outline: 0;
 }
 .floorplan .lab.busy {
   border-top: 1px solid rgba(189, 0, 0, 0.85);
   border-right: 1px solid rgba(189, 0, 0, 0.85);
-  border-left: 2px solid rgba(112, 0, 0, 0.85);
-  border-bottom: 2px solid rgba(112, 0, 0, 0.85);
+  border-left: 1px solid rgba(112, 0, 0, 0.85);
+  border-bottom: 1px solid rgba(112, 0, 0, 0.85);
   background: linear-gradient(rgba(189, 0, 0, 0.85), rgba(138, 0, 0, 0.85));
 }
 .floorplan .lab.busy:focus {
   border-left: 1px solid rgba(189, 0, 0, 0.85);
   border-bottom: 1px solid rgba(189, 0, 0, 0.85);
-  border-top: 2px solid rgba(112, 0, 0, 0.85);
-  border-right: 2px solid rgba(112, 0, 0, 0.85);
-  background: linear-gradient(rgba(112, 0, 0, 0.85), rgba(163, 0, 0, 0.85));
+  border-top: 1px solid rgba(112, 0, 0, 0.85);
+  border-right: 1px solid rgba(112, 0, 0, 0.85);
+  background: linear-gradient(rgba(112, 0, 0, 0.85), rgba(138, 0, 0, 0.85));
+  outline: 0;
 }
 .floorplan .lab.soon {
   border-top: 1px solid rgba(228, 120, 12, 0.95);
   border-right: 1px solid rgba(228, 120, 12, 0.95);
-  border-left: 2px solid rgba(155, 82, 8, 0.95);
-  border-bottom: 2px solid rgba(155, 82, 8, 0.95);
+  border-left: 1px solid rgba(155, 82, 8, 0.95);
+  border-bottom: 1px solid rgba(155, 82, 8, 0.95);
   background: linear-gradient(rgba(228, 120, 12, 0.95), rgba(179, 94, 9, 0.95));
 }
 .floorplan .lab.soon:focus {
   border-left: 1px solid rgba(228, 120, 12, 0.95);
   border-bottom: 1px solid rgba(228, 120, 12, 0.95);
-  border-top: 2px solid rgba(155, 82, 8, 0.95);
-  border-right: 2px solid rgba(155, 82, 8, 0.95);
-  background: linear-gradient(rgba(155, 82, 8, 0.95), rgba(203, 107, 11, 0.95));
+  border-top: 1px solid rgba(155, 82, 8, 0.95);
+  border-right: 1px solid rgba(155, 82, 8, 0.95);
+  background: linear-gradient(rgba(155, 82, 8, 0.95), rgba(179, 94, 9, 0.95));
+  outline: 0;
 }
 .floorplan .lab.free {
   border-top: 1px solid rgba(24, 165, 24, 0.85);
   border-right: 1px solid rgba(24, 165, 24, 0.85);
-  border-left: 2px solid rgba(14, 98, 14, 0.85);
-  border-bottom: 2px solid rgba(14, 98, 14, 0.85);
+  border-left: 1px solid rgba(14, 98, 14, 0.85);
+  border-bottom: 1px solid rgba(14, 98, 14, 0.85);
   background: linear-gradient(rgba(24, 165, 24, 0.85), rgba(17, 120, 17, 0.85));
 }
 .floorplan .lab.free:focus {
   border-left: 1px solid rgba(24, 165, 24, 0.85);
   border-bottom: 1px solid rgba(24, 165, 24, 0.85);
-  border-top: 2px solid rgba(14, 98, 14, 0.85);
-  border-right: 2px solid rgba(14, 98, 14, 0.85);
-  background: linear-gradient(rgba(14, 98, 14, 0.85), rgba(20, 143, 20, 0.85));
+  border-top: 1px solid rgba(14, 98, 14, 0.85);
+  border-right: 1px solid rgba(14, 98, 14, 0.85);
+  background: linear-gradient(rgba(14, 98, 14, 0.85), rgba(17, 120, 17, 0.85));
+  outline: 0;
 }
 .floorplan .lab .info {
   text-align: center;
@@ -182,9 +186,9 @@ h2 strong {
   margin-top: 0;
   font-size: 2em;
   font-weight: 800;
-  color: rgba(0, 0, 0, 0.7);
-  text-shadow: -1px 1px 0 rgba(204, 204, 204, 0.9);
-  opacity: 0.5;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: -1px 1px 0 rgba(136, 136, 136, 0.3);
+  opacity: 0.7;
   vertical-align: center;
 }
 @keyframes heartbeat {
