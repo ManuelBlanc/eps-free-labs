@@ -43,15 +43,11 @@ h2 {
 	.north, .south { .make-row(); }
 	.south { margin-bottom: 1.2em; }
 
-	@lab-border-radius: 8px;
-	.west {
-		border-radius: 40px;
-		overlow: hidden !important;
-	}
-	//.north .lab:first-child {  border-top-left-radius: @lab-border-radius; }
-	//.north .lab:last-child  { border-top-right-radius: @lab-border-radius; }
-	//.south .lab:first-child {  border-bottom-left-radius: @lab-border-radius; }
-	//.south .lab:last-child  { border-bottom-right-radius: @lab-border-radius; }
+	@lab-border-radius: 4px;
+	.middle .lab:first-child, .north .lab:first-child {  border-top-left-radius: @lab-border-radius; }
+	.middle .lab:last-child,  .north .lab:last-child  { border-top-right-radius: @lab-border-radius; }
+	.middle .lab:first-child, .south .lab:first-child {  border-bottom-left-radius: @lab-border-radius; }
+	.middle .lab:last-child,  .south .lab:last-child  { border-bottom-right-radius: @lab-border-radius; }
 
 	.middle {
 		padding: 0 2em;
@@ -103,7 +99,7 @@ h2 {
 				color: fade(#fff, 85%);
 				font-size: 1.2em;
 				height: 1.2em;
-				text-shadow: 0 0 3px fade(#000, 100%);
+				text-shadow: 0 0 1px fade(#000, 100%);
 			}
 			&.timeUntilChange {
 				color: fade(#fff, 65%);

@@ -67,7 +67,10 @@ $(function() {
 				for (i = hour; i < 12; i++) {
 					if (lab.schedule[i]) break;
 				}
-				self.toggleClass("free", (i == 12));
+				if (i == 12 && hour < 11) {
+					self.addClass("free");
+					howMuch = "Recomendado";
+				}
 			}
 			timeUntilChange.text(howMuch);
 

@@ -65,9 +65,21 @@ h2 strong {
 .floorplan .south {
   margin-bottom: 1.2em;
 }
-.floorplan .west {
-  border-radius: 40px;
-  overlow: hidden !important;
+.floorplan .middle .lab:first-child,
+.floorplan .north .lab:first-child {
+  border-top-left-radius: 4px;
+}
+.floorplan .middle .lab:last-child,
+.floorplan .north .lab:last-child {
+  border-top-right-radius: 4px;
+}
+.floorplan .middle .lab:first-child,
+.floorplan .south .lab:first-child {
+  border-bottom-left-radius: 4px;
+}
+.floorplan .middle .lab:last-child,
+.floorplan .south .lab:last-child {
+  border-bottom-right-radius: 4px;
 }
 .floorplan .middle {
   padding: 0 2em;
@@ -179,7 +191,7 @@ h2 strong {
   color: rgba(255, 255, 255, 0.85);
   font-size: 1.2em;
   height: 1.2em;
-  text-shadow: 0 0 3px #000000;
+  text-shadow: 0 0 1px #000000;
 }
 .floorplan .lab .info.timeUntilChange {
   color: rgba(255, 255, 255, 0.65);
