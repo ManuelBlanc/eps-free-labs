@@ -62,11 +62,12 @@ h2 strong {
   margin-left: -15px;
   margin-right: -15px;
 }
-.floorplan .north {
-  margin-bottom: 0em;
-}
 .floorplan .south {
   margin-bottom: 1.2em;
+}
+.floorplan .west {
+  border-radius: 40px;
+  overlow: hidden !important;
 }
 .floorplan .middle {
   padding: 0 2em;
@@ -178,6 +179,7 @@ h2 strong {
   color: rgba(255, 255, 255, 0.85);
   font-size: 1.2em;
   height: 1.2em;
+  text-shadow: 0 0 3px #000000;
 }
 .floorplan .lab .info.timeUntilChange {
   color: rgba(255, 255, 255, 0.65);
@@ -235,15 +237,16 @@ footer p {
   padding: 0 0 20px 0;
 }
 footer p span.heart {
-  display: inline-block;
+  font-size: 0;
   color: darkred;
-  position: relative;
+  display: inline-block;
   -webkit-animation: heartbeat 1s ease-out infinite;
   -o-animation: heartbeat 1s ease-out infinite;
   animation: heartbeat 1s ease-out infinite;
 }
 footer p span.heart:before {
-  content: "❤";
+  content: '❤';
+  font-size: 18px;
 }
 footer small {
   display: block;

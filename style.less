@@ -41,8 +41,17 @@ h2 {
 		padding: 0 2em;
 	}
 	.north, .south { .make-row(); }
-	.north { margin-bottom: 0em; }
 	.south { margin-bottom: 1.2em; }
+
+	@lab-border-radius: 8px;
+	.west {
+		border-radius: 40px;
+		overlow: hidden !important;
+	}
+	//.north .lab:first-child {  border-top-left-radius: @lab-border-radius; }
+	//.north .lab:last-child  { border-top-right-radius: @lab-border-radius; }
+	//.south .lab:first-child {  border-bottom-left-radius: @lab-border-radius; }
+	//.south .lab:last-child  { border-bottom-right-radius: @lab-border-radius; }
 
 	.middle {
 		padding: 0 2em;
@@ -94,6 +103,7 @@ h2 {
 				color: fade(#fff, 85%);
 				font-size: 1.2em;
 				height: 1.2em;
+				text-shadow: 0 0 3px fade(#000, 100%);
 			}
 			&.timeUntilChange {
 				color: fade(#fff, 65%);
@@ -139,11 +149,13 @@ footer {
 		margin: 0 auto;
 		padding: 0 0 20px 0;
 		span.heart {
-			display: inline-block;
+			// Sustitucion por un corazon
+			font-size: 0;
+			&:before { content: '❤'; font-size: 18px; }
+			// Estilado y animacion
 			color: darkred;
-			position: relative;
+			display: inline-block;
 			.animation(heartbeat 1s ease-out infinite);
-			&:before { content: "❤"; }
 		}
 	}
 	small {
