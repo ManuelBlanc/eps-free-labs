@@ -26,6 +26,7 @@ body {
   padding-left: 5%;
   padding-right: 5%;
   box-shadow: 0 12px 50px -12px rgba(0, 0, 0, 0.5);
+  min-height: 80vh;
 }
 h2 {
   margin-bottom: 1em;
@@ -111,7 +112,7 @@ h2 strong {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  min-height: 7.5em !important;
+  min-height: 7em !important;
   padding: 0;
   border-top: 1px solid #6f6f6f;
   border-right: 1px solid #6f6f6f;
@@ -201,7 +202,7 @@ h2 strong {
   font-size: 2em;
   font-weight: 800;
   color: rgba(0, 0, 0, 0.8);
-  text-shadow: -1px 1px 0 rgba(136, 136, 136, 0.3);
+  text-shadow: -1px 1px 0 #888888;
   opacity: 0.7;
   vertical-align: center;
 }
@@ -235,7 +236,6 @@ h2 strong {
 }
 footer {
   text-align: center;
-  position: relative;
 }
 footer hr {
   margin-top: 0;
@@ -264,6 +264,7 @@ footer small {
   display: block;
 }
 .ribbon {
+  font-size: 0;
   background: url('img/github_ribbon.png') no-repeat;
   background-size: contain;
   position: absolute;

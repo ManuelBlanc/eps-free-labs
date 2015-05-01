@@ -1,13 +1,11 @@
 
 $(function() {
 	"use strict";
+	$('.ribbon').toggle(window.location.host != 'labs.michis.me');
 
-	// Inicializacion de la pagina web
-	var floorplan = $(".floorplan");
-
-	// Rellenamos los laboratorios con sus etiquetas
+	// Inicializacion: rellenamos los laboratorios con sus etiquetas
 	var tabindex = 0;
-	floorplan.find(".lab").each(function() {
+	$(".floorplan").find(".lab").each(function() {
 		var lab = $(this);
 
 		lab.attr("tabindex", ++tabindex);
@@ -24,23 +22,27 @@ $(function() {
 		qd[pair[0]] = decodeURIComponent(item.split("=")[1]);
 	});
 
-	// Timetable starts at 9 o'clock
+	// Preparamos las variables
 	var now  = new Date();
 	var day  = ("day"  in qd) ? parseInt(qd.day, 10)  : now.getDay();
 	var hour = ("hour" in qd) ? parseInt(qd.hour, 10) : (now.getHours() - 9);
+	// Restamos 9 para tener indices desde 0
 
 
-	// Test if the day and hour are in-range
+	// Estamos en un dia y hora valido?
 	if ((day <= 0 || day >= 6) || (hour < 0 || hour > 11)) {
 		$(".lab").addClass("busy");
-		return; // Abort
+		return; // Abortamos
 	}
 
-	// Fetch the timetable
+	// Descargamos el horario
 	$.getJSON("timetable.json", function(timetable, status) {
 		timetable[day].forEach(function(lab) {
 			var self = $("#" + lab.id);
-			if (!self) return; // No esta el laboratorio en el plano
+			if (!self) {
+				console.error("ID de laboratorio no valido");
+				return;
+			}
 
 			var activity = lab.schedule[hour];
 

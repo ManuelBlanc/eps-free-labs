@@ -17,6 +17,7 @@ html, body {
 	padding-left: 5%;
 	padding-right: 5%;
 	box-shadow: 0 12px 50px -12px rgba(0,0,0,0.5);
+	min-height: 80vh;
 }
 
 h2 {
@@ -64,7 +65,7 @@ h2 {
 		}
 
 		// Posicion y tamaño
-		min-height: 7.5em !important;
+		min-height: 7em !important;
 		padding: 0;
 
 		.colorize-lab-mixin(@bg) {
@@ -111,7 +112,7 @@ h2 {
 				font-size: 2em;
 				font-weight: 800;
 				color: fade(#000, 80%);
-				text-shadow: -1px 1px 0 fade(#888, 30%);
+				text-shadow: -1px 1px 0 fade(#888, 100%);
 				opacity: 0.7;
 				vertical-align: center;
 			}
@@ -133,7 +134,6 @@ h2 {
 
 footer {
 	text-align: center;
-	position: relative;
 	hr {
 		margin-top: 0;
 		width: 100%;
@@ -160,6 +160,8 @@ footer {
 }
 
 .ribbon {
+	// Hide the text
+	font-size: 0;
 	// Image
 	background: url('img/github_ribbon.png') no-repeat;
 	background-size: contain;
