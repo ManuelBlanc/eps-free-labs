@@ -68,19 +68,19 @@ h2 strong {
 }
 .floorplan .middle .lab:first-child,
 .floorplan .north .lab:first-child {
-  border-top-left-radius: 4px;
+  border-top-left-radius: 5px;
 }
 .floorplan .middle .lab:last-child,
 .floorplan .north .lab:last-child {
-  border-top-right-radius: 4px;
+  border-top-right-radius: 5px;
 }
 .floorplan .middle .lab:first-child,
 .floorplan .south .lab:first-child {
-  border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 5px;
 }
 .floorplan .middle .lab:last-child,
 .floorplan .south .lab:last-child {
-  border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 5px;
 }
 .floorplan .middle {
   padding: 0 2em;
@@ -118,7 +118,11 @@ h2 strong {
   border-right: 1px solid #6f6f6f;
   border-left: 1px solid #484848;
   border-bottom: 1px solid #484848;
-  background: linear-gradient(#6f6f6f, #555555);
+  background-image: -webkit-linear-gradient(top, #6f6f6f 0%, #555555 100%);
+  background-image: -o-linear-gradient(top, #6f6f6f 0%, #555555 100%);
+  background-image: linear-gradient(to bottom, #6f6f6f 0%, #555555 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6f6f6f', endColorstr='#ff555555', GradientType=0);
 }
 .floorplan .lab.double {
   position: relative;
@@ -133,7 +137,11 @@ h2 strong {
   border-bottom: 1px solid #6f6f6f;
   border-top: 1px solid #484848;
   border-right: 1px solid #484848;
-  background: linear-gradient(#484848, #555555);
+  background-image: -webkit-linear-gradient(top, #484848 0%, #555555 100%);
+  background-image: -o-linear-gradient(top, #484848 0%, #555555 100%);
+  background-image: linear-gradient(to bottom, #484848 0%, #555555 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff484848', endColorstr='#ff555555', GradientType=0);
   outline: 0;
 }
 .floorplan .lab.busy {
@@ -141,14 +149,22 @@ h2 strong {
   border-right: 1px solid rgba(189, 0, 0, 0.85);
   border-left: 1px solid rgba(112, 0, 0, 0.85);
   border-bottom: 1px solid rgba(112, 0, 0, 0.85);
-  background: linear-gradient(rgba(189, 0, 0, 0.85), rgba(138, 0, 0, 0.85));
+  background-image: -webkit-linear-gradient(top, rgba(189, 0, 0, 0.85) 0%, rgba(138, 0, 0, 0.85) 100%);
+  background-image: -o-linear-gradient(top, rgba(189, 0, 0, 0.85) 0%, rgba(138, 0, 0, 0.85) 100%);
+  background-image: linear-gradient(to bottom, rgba(189, 0, 0, 0.85) 0%, rgba(138, 0, 0, 0.85) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d9bd0000', endColorstr='#d98a0000', GradientType=0);
 }
 .floorplan .lab.busy:focus {
   border-left: 1px solid rgba(189, 0, 0, 0.85);
   border-bottom: 1px solid rgba(189, 0, 0, 0.85);
   border-top: 1px solid rgba(112, 0, 0, 0.85);
   border-right: 1px solid rgba(112, 0, 0, 0.85);
-  background: linear-gradient(rgba(112, 0, 0, 0.85), rgba(138, 0, 0, 0.85));
+  background-image: -webkit-linear-gradient(top, rgba(112, 0, 0, 0.85) 0%, rgba(138, 0, 0, 0.85) 100%);
+  background-image: -o-linear-gradient(top, rgba(112, 0, 0, 0.85) 0%, rgba(138, 0, 0, 0.85) 100%);
+  background-image: linear-gradient(to bottom, rgba(112, 0, 0, 0.85) 0%, rgba(138, 0, 0, 0.85) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d9700000', endColorstr='#d98a0000', GradientType=0);
   outline: 0;
 }
 .floorplan .lab.soon {
@@ -156,14 +172,22 @@ h2 strong {
   border-right: 1px solid rgba(228, 120, 12, 0.95);
   border-left: 1px solid rgba(155, 82, 8, 0.95);
   border-bottom: 1px solid rgba(155, 82, 8, 0.95);
-  background: linear-gradient(rgba(228, 120, 12, 0.95), rgba(179, 94, 9, 0.95));
+  background-image: -webkit-linear-gradient(top, rgba(228, 120, 12, 0.95) 0%, rgba(179, 94, 9, 0.95) 100%);
+  background-image: -o-linear-gradient(top, rgba(228, 120, 12, 0.95) 0%, rgba(179, 94, 9, 0.95) 100%);
+  background-image: linear-gradient(to bottom, rgba(228, 120, 12, 0.95) 0%, rgba(179, 94, 9, 0.95) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2e4780c', endColorstr='#f2b35e09', GradientType=0);
 }
 .floorplan .lab.soon:focus {
   border-left: 1px solid rgba(228, 120, 12, 0.95);
   border-bottom: 1px solid rgba(228, 120, 12, 0.95);
   border-top: 1px solid rgba(155, 82, 8, 0.95);
   border-right: 1px solid rgba(155, 82, 8, 0.95);
-  background: linear-gradient(rgba(155, 82, 8, 0.95), rgba(179, 94, 9, 0.95));
+  background-image: -webkit-linear-gradient(top, rgba(155, 82, 8, 0.95) 0%, rgba(179, 94, 9, 0.95) 100%);
+  background-image: -o-linear-gradient(top, rgba(155, 82, 8, 0.95) 0%, rgba(179, 94, 9, 0.95) 100%);
+  background-image: linear-gradient(to bottom, rgba(155, 82, 8, 0.95) 0%, rgba(179, 94, 9, 0.95) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f29b5208', endColorstr='#f2b35e09', GradientType=0);
   outline: 0;
 }
 .floorplan .lab.free {
@@ -171,14 +195,22 @@ h2 strong {
   border-right: 1px solid rgba(24, 165, 24, 0.85);
   border-left: 1px solid rgba(14, 98, 14, 0.85);
   border-bottom: 1px solid rgba(14, 98, 14, 0.85);
-  background: linear-gradient(rgba(24, 165, 24, 0.85), rgba(17, 120, 17, 0.85));
+  background-image: -webkit-linear-gradient(top, rgba(24, 165, 24, 0.85) 0%, rgba(17, 120, 17, 0.85) 100%);
+  background-image: -o-linear-gradient(top, rgba(24, 165, 24, 0.85) 0%, rgba(17, 120, 17, 0.85) 100%);
+  background-image: linear-gradient(to bottom, rgba(24, 165, 24, 0.85) 0%, rgba(17, 120, 17, 0.85) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d918a518', endColorstr='#d9117811', GradientType=0);
 }
 .floorplan .lab.free:focus {
   border-left: 1px solid rgba(24, 165, 24, 0.85);
   border-bottom: 1px solid rgba(24, 165, 24, 0.85);
   border-top: 1px solid rgba(14, 98, 14, 0.85);
   border-right: 1px solid rgba(14, 98, 14, 0.85);
-  background: linear-gradient(rgba(14, 98, 14, 0.85), rgba(17, 120, 17, 0.85));
+  background-image: -webkit-linear-gradient(top, rgba(14, 98, 14, 0.85) 0%, rgba(17, 120, 17, 0.85) 100%);
+  background-image: -o-linear-gradient(top, rgba(14, 98, 14, 0.85) 0%, rgba(17, 120, 17, 0.85) 100%);
+  background-image: linear-gradient(to bottom, rgba(14, 98, 14, 0.85) 0%, rgba(17, 120, 17, 0.85) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d90e620e', endColorstr='#d9117811', GradientType=0);
   outline: 0;
 }
 .floorplan .lab .info {
