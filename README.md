@@ -6,11 +6,16 @@ Los datos son extraidos de la página de [laboratorios libres][labs_libres] usan
 
 Estos datos se presentan con jQuery, usando Bootstrap para mayor portabilidad y un diseño responsivo.
 
-El favicon de la pagina es un [Silk icon] de FamFamFam, (en concreto, `application_osx_terminal`).
+Para ver otra hora hora y/o día, añade `/?day=WD&hour=HH` al final de la URL, donde
+
+* `WD` es el dia de la semana y esta entre 1 (Lunes) y 5 (Viernes).
+* `HH` es el número de horas desde las 9:00 AM.
+
+El favicon de la pagina es un icono del set [Silk de FamFamFam][silk], (en concreto, `application_osx_terminal`).
 
 [labs_libres]: http://www.eps.uam.es/nueva_web/lab_libres.php
 [eps]: www.ii.uam.es/
-[famfamfam]: http://www.famfamfam.com/lab/icons/silk/
+[silk]: http://www.famfamfam.com/lab/icons/silk/
 
 ### Creditos
 

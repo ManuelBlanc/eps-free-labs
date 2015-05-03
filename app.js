@@ -29,7 +29,7 @@ $(function() {
 
 
 	// Estamos en un dia y hora valido?
-	if ((day <= 0 || day >= 6) || (hour < 0 || hour > 11)) {
+	if ((day <= 0 || day >= 6) || (hour < 0 || hour > 10)) {
 		$(".lab").addClass("busy");
 		return; // Abortamos
 	}
