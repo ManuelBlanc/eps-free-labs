@@ -1,0 +1,13 @@
+{
+	"name"       	: "Laboratorios libres",
+	"short_name" 	: "labs.michis",
+	"display"    	: "fullscreen",
+	"theme_color"	: "black",
+	"icons": [
+		{
+			"src": "img/logo.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		}
+	]
+}

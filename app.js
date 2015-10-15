@@ -7,7 +7,7 @@ $(function() {
 	$(".floorplan").find(".lab").each(function() {
 		var lab = $(this);
 
-		lab.attr("tabindex", 1);
+		//lab.attr("tabindex", 1);
 		// Añadimos la etiqueta con el nombre del laboratorio
 		lab.append("<span class='info name'>" + this.id + "</span>");
 		lab.append(" <span class='info activity'></span>");
@@ -23,7 +23,7 @@ $(function() {
 
 	// Preparamos las variables
 	var now  = new Date();
-	var day  = ("day"  in qd) ? parseInt(qd.day, 10)  : now.getDay();
+	var day  = ("day"  in qd) ? parseInt(qd.day, 10)  : now.getDay()-1;
 	var hour = ("hour" in qd) ? parseInt(qd.hour, 10) : (now.getHours() - 9);
 	// Restamos 9 para tener indices desde 0
 

@@ -22,8 +22,8 @@ casper.on("page.error", function(msg) {
 // Devuelve la direccion del i-esimo dia de la semana
 function getUrlForDay(i) {
 	if (i < 0 || i > 6) throw new Error("Weekday out of bounds");
-	i += 19; // La semana del 19 de abril de 2015
-	return "http://www.eps.uam.es/nueva_web/lab_libres.php?dia="+i+"&mes=4&anno=2015";
+	i += 5; // La semana del 19 de abril de 2015
+	return "http://www.eps.uam.es/nueva_web/lab_libres.php?anno=2015&mes=10&dia="+i;
 }
 
 var timetable = {};
@@ -39,12 +39,15 @@ function inject_name_normalizer() {
 		[ "Desarrollo Aplicaciones Dispositivos Moviles"      	, "DADM"   	],
 		[ "Curso In-Company del CFC"                          	, "CCFC"   	],
 		[ "Examen Filtros"                                    	, "FILTROS"	],
-		[ "Multimedia"                                        	, "MM"     	],
+		//[ "Multimedia"                                      	, "MM"     	],
 		[ "Tecnicas Analisis Secuencias Video Videovigilancia"	, "TASVV"  	],
 		[ "Curso Formacion Docente"                           	, "CFD"    	],
 		[ "Proyecto de Programacion"                          	, "PPROG"  	],
 		[ "PPROG-2122"                                        	, "PPROG"  	],
 		[ "Programacion II"                                   	, "PROG2"  	],
+		[ "Moodle 2.0: Actividades"                           	, "MOODLE2"	],
+		[ "Introductory on R"                                 	, "INTRO R"	],
+		[ "Evidencia Digital"                                 	, "EVIDIG" 	],
 	];
 	window.normalizeActivityName = function(str) {
 		replacements.forEach(function(rep) {
@@ -117,7 +120,7 @@ casper.each([1, 2, 3, 4, 5], function(self, i) {
 // Escribir los datos a fichero
 casper.then(function() {
 	casper.log("Escribiendo los datos a fichero ...", "info");
-	fs.write("timetable.json", JSON.stringify(timetable, null, 2), "w");
+	fs.write("timetable.json", JSON.stringify(timetable/*, null, 2*/), "w");
 
 	casper.log("Terminado! Cerrando casperjs.", "info");
 	setTimeout(function() { casper.exit(); }, 0);
